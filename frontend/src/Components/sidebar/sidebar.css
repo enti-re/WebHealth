@@ -1,0 +1,158 @@
+.sidebar-original{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    animation: sidebarBig .7s;
+    animation-fill-mode: forwards;
+    position: fixed;
+    z-index: 100;
+}
+
+
+@keyframes sidebarBig {
+    from{width: 0%}
+    to{width: 100%;}    
+}
+
+.sidebar-menu{
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3vw;
+    height: 100vh;
+    position: fixed;
+    top: 2%;
+    /* opacity: .8; */
+    /* border-left: 2px solid black; */
+    /* outline: 2px solid #D6DBDF; */
+    /* left: -3%; */
+}
+
+.sidebar-menu.active{
+    width: 100vw;
+}
+
+.sidebar-menu-head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* margin: 0 auto; */
+    list-style: none;
+    
+}
+
+.sidebar-menu-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    margin: 1rem 0 auto;
+}
+
+.sidebar-menu-media{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: end;
+    align-items: flex-start;
+    row-gap: -10px;
+    margin-left: -1rem;
+    margin-top: 2rem;
+    /* margin: 18rem 0 auto; */
+}
+
+.sidebar-menu-item-original{
+    /* background-color: (rgba(256,256,256,.5)); */
+    /* height: 100vh; */
+    /* width: 100vw; */
+    margin-left: 2vw;
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 5vh;
+}
+
+.sidebar-text{
+    list-style: none;
+    font-size: 20px;
+    color: white;
+    height: 10vh;
+}
+
+.sidebar-text :active{
+    color: white ;   
+}
+
+.head-icon{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.sidebar-text a{
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-text :hover{
+    color:#212F3C;
+}
+
+.sidebar-text :active{
+    opacity: .8;
+}
+
+span{
+    margin-left: .5vw;
+    margin-top: .5vw;
+}
+
+
+img{
+    height: 30vh;
+    width: auto;
+    margin: 2rem 0 0 -4.5rem ;
+}
+
+#text{
+    margin-left: 10rem;
+    margin-top: 7rem;
+    font-size: 70px;
+    font-weight: 150;
+}
+
+#text:hover{
+    color: white;
+    letter-spacing: 30px;
+    transition: .5s;
+}
+
+.original-line{
+    background-color: #212F3C;
+    width: 1150px;
+    margin-left: 5rem;
+    height: 1px;
+}
+
+
+
+.original-return{
+    position: fixed;
+    top: 2%;
+    left: 90%;
+    font-size: 5vh;
+    font-weight: 150;
+}
+
+.original-return:hover{
+    color: #212F3C;
+}
+
+@media screen and (max-width:980px) {
+    .sidebar-menu-media{
+        margin-left: 2rem;
+    }
+}

@@ -1,0 +1,106 @@
+.register-body{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+
+.register-container{
+    background-color: white;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    width: 50vw;
+    height: 60vh;
+    box-shadow: 6px 6px 12px #273746;
+}
+
+.sidebar-1{
+    background-image: url('./register.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.sidebar-2{
+    font-size: 18px;
+    grid-auto-flow: row;
+    margin: 2rem auto;
+    row-gap: 2rem;
+}
+
+
+.select11 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.select1{
+    font-size: 2rem;
+}
+
+.select12{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.select2{
+    font-size: 2rem;
+}
+
+.sidebar1-form{
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 20px;
+}
+
+.sidebar2-form{
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 1rem;
+}
+
+.oneLine{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+}
+
+.sidebar-button{
+    color: #FFFFFF ;
+    outline: none;
+    background-color: #5D6D7E;
+    border-radius: 3px;
+    width: 75px;
+    margin: 0 auto;
+}
+
+.register-form{
+    display: grid;
+    grid-auto-flow: row;
+    line-height: 11px;
+}
+
+@media screen and (max-width: 960px) {
+    
+    .register-container{
+        background-image: url(./register.jpg);
+        background-size: cover;
+        background-position: center center;
+        display: grid;
+        grid-template-columns: 0% 80%;
+        margin: 0 auto;
+        width: 60vw;
+        height: 60vh;
+        box-shadow: 6px 6px 12px #273746;
+    }
+
+    .sidebar-1{
+        visibility: hidden;
+    }
+    
+.sidebar-2{
+    text-align: center;
+}
+
+}

@@ -1,0 +1,124 @@
+.bmi-grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.bmi-grid1{
+    color: #34495E;
+    background-image: linear-gradient(315deg, rgb(99, 164, 255,.8) 0%, rgb(131, 234, 241,.8) 74%);
+    padding: 45% 4%;
+}
+
+.bmi-grid1 h1,.bmi-calc{
+    margin-left: 20%;
+}
+
+.bmi-grid2{
+    background-image: url("./bmi-back.jpg");
+    background-size:cover;
+    height: 100vh;
+    display: grid;
+    grid-auto-flow: row;
+    color: rgba(256,256,256,.95);
+    font-weight: 150;
+}
+
+.bmi-grid2-color{
+    background-color: rgba(44,62,80,0.85);
+    
+}
+
+.bmi-form{
+    margin-top: 10%;
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: row;
+    row-gap: 15px;
+}
+
+.bmi-form p{
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: rgba(256,256,256,.3);
+}
+
+.bmi-radio p{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.bmi-form input[type=text]{
+    width: 70%;
+    height: 160%;
+    background: rgba(256,256,256,.3);
+    border: none;
+    outline: none;
+    color: white;
+    caret-color: white;
+}
+
+.bmi-form input[type=number]{
+    width: 70%;
+    height: 160%;
+    background: rgba(256,256,256,.3);
+    border: none;
+    outline: none;
+    color: white;
+    caret-color: white;
+}
+
+.bmi-form input[type=text]:hover{
+    background: rgba(256,256,256,.5);
+}
+.bmi-form input[type=number]:hover{
+    background: rgba(256,256,256,.5);
+}
+
+.bmi-form input::placeholder{
+    color:rgba(256,256,256,.8);
+}
+
+.bmi-grid button{
+    background-color: rgba(77,182,172,0.8);
+    color: white;
+    width: 70%;
+    height: 135%;
+    border: none;
+    outline: none;
+}
+
+.bmi-form button:hover{
+    background-color: rgba(77,182,172,0.5);
+}
+
+.bmi-result{
+    position: fixed;
+    top: 40%;
+    left: 80%;
+}
+
+.bmi-result button{
+    margin-left: -1.2rem;
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: rgba(256,256,256,.5);
+}
+
+.calorie-grid{
+    display: grid;
+    padding: 5%;
+    column-gap: 30px;
+    grid-template-columns: 50% 50%;
+}
+
+
+.bmi-calc{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 980px) {
+    .bmi-grid{
+        display: grid;
+        grid-template-columns: 0% 100%;
+    }
+}

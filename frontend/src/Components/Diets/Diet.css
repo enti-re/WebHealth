@@ -1,0 +1,172 @@
+.diet-flex{
+    display: grid;
+    margin-top: 2rem;
+    grid-auto-flow: column;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.diet-flex-icon{
+    display: grid;
+    margin-top: 2rem;
+    grid-auto-flow: column;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.diet-flex-item{
+    opacity: .9;
+    text-align: center;
+    height: 130px;
+    width: 130px;
+    border-bottom: 8px solid black;
+    border-radius: 5px;
+    animation: ease-in 4s;
+    transition: 1s;
+}
+
+.back-btn-workout{
+    background-color: rgba(0, 128, 128, 0.2);
+    position: fixed;
+    padding:2px;
+    top: 5%;
+    left: 90%;
+    color: white;
+    border: 1px solid white;
+    outline: 0;
+    transform: scale(1.5);
+}
+.diet-body{
+    background-image: url("./images//diet-background2.jpg");
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    background-size: cover;
+    text-align: center;
+   display: grid;
+   grid-auto-flow: row;
+   row-gap: 0px;
+   /* height: 100vh; */
+   /* width: 100vw; */
+   animation-name: trans;
+   animation-duration: .8s;
+}
+
+@keyframes trans {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.diet-body-color{
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+}
+
+.diet-body-color h1{
+    color: #FDFEFE;
+}
+
+
+.diet-button{
+    transform: skewX(-10deg);
+    font-size: 25px;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    padding: 5px 30px 5px 30px;
+    border-radius: 2px;
+    transition: .5s;
+    background-color:rgba(0,0,0, 0.8);
+    color: white;
+    border-radius: 5px;
+}
+
+.diet-button:hover{
+    background-color: rgba(256, 256, 256, .5);
+    color: black;
+    transition: .5s;
+}
+
+.diet-grid{
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 0px;
+}
+
+.diet-buildBody{
+    width: 280px;
+    height: 150px;
+    transform: skewX(-5deg);
+    background-color:rgba(0,0,0,.6);
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.diet-buildBody:hover{
+    background-color: rgba(256, 256, 256, .5);
+    color: black;
+    transition: .5s;
+}
+
+.diet-buildBody h1:hover{
+    color: black;
+}
+
+.gym-loseFatlist{
+    display: grid;
+    grid-auto-flow: row;
+    list-style-type: none;
+
+}
+
+.diet-flex-list{
+    display: grid;
+    margin-top: 2rem;
+    grid-auto-flow: column;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.diet-buildBody-list{
+    width: 400px;
+    height: 100px;
+    border-radius: 5px;
+    transition: .5s;
+    list-style-type: none;
+}
+
+.diet-buildBody-list ul{
+    list-style-type: none;
+}
+
+@media screen and (max-width: 980px){
+    .diet-flex{
+        display: grid;
+        grid-auto-flow: row;
+    }
+
+    .diet-flex-list{
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: 0% 100%;
+        row-gap: 240px;
+        overflow-y:hidden;
+    }
+
+    .back-btn-workout{
+        visibility: hidden;
+    }
+
+    .diet-buildBody p{
+        visibility: hidden;
+    }
+
+    .diet-buildBody{
+        width: 280px;
+        height: 80px;
+    }
+}
+
+
+
